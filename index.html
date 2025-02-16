@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jivi AI Chat</title>
+    <script defer src="script.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex justify-center items-center h-screen bg-gray-900">
+
+    <div class="container mx-auto max-w-2xl bg-gray-800 text-white shadow-lg rounded-lg p-6 h-[80vh] flex flex-col">
+        <h2 class="text-2xl font-bold text-center text-blue-400">Jivi AI Chat</h2>
+
+        <!-- Chat Box -->
+        <div id="chat-box" class="flex-1 overflow-y-auto border border-gray-700 p-4 mt-4 rounded-md bg-gray-900 space-y-2 h-[65vh]"></div>
+
+        <!-- Input Field & Button -->
+        <div class="mt-4 flex">
+            <input type="text" id="user-input" placeholder="Type a message..."
+                   class="flex-1 border border-gray-600 p-3 rounded-md bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-400 text-lg">
+            <button onclick="sendMessage()"
+                    class="ml-2 px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 text-lg">
+                Send
+            </button>
+        </div>
+    </div>
+
+</body>
+</html>
